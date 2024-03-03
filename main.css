@@ -28,6 +28,10 @@ header form input{
     font-size: 15px;
 }
 
+form input{
+    width: 100px;
+}
+
 .nav-pills .nav-link{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -45,7 +49,6 @@ header form input{
     padding-bottom: 1px;
 }
 
-
 #txt-sobre{
     font-size: 15px;
     line-height: 20px;
@@ -62,7 +65,7 @@ header form input{
     justify-content: center;
 }
 
-#txt-sobre div button{
+#txt-sobre div button,#contato button{
     text-transform: uppercase;
     letter-spacing: 2px;
     padding: 7px 40px;
@@ -70,23 +73,22 @@ header form input{
     background-color: white;
     border: 2px solid #1c3d30;
     font-weight: 500;
-    
 }
 
-#txt-sobre div button a{
-    color: #1c3d30;
-    text-decoration: none;
-}
-
-#txt-sobre div button:hover{
+#txt-sobre div button:hover,#contato button:hover{
     background-color: #61746e;
     transition: .3s ease-in-out;
 }
 
-#txt-sobre div button a:hover{
-    color: black;
-    text-decoration: underline;
+#contato button{
+    width: 100%;
 }
+
+#contato textarea{
+    resize: none;
+    height: 100px;
+}
+
 
 .nav-pills .nav-link.active{
     font-family: "Roboto", sans-serif;
@@ -105,7 +107,6 @@ header form input{
 .container-item {
     position: relative;
     display: inline-block;
-    
 }
 
 .container-item:hover img {
@@ -114,22 +115,71 @@ header form input{
     
 }
 
-.item-nome {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    padding: 10px;
-    text-transform: uppercase;
-    
-}
-
 .container-item.hovered .item-nome {
-    font-size: 50px;
     transition: 0.4s ease-in-out;
 }
 
-h4{
-    font-size: 40px;
+section button {
+    padding: 0px;
+    border: none;
+}
+
+.nav-tabs .nav-link{
+    width: 150px;
+}
+
+.nav-tabs .nav-link{
+    font-weight: bold;
+    color: #61746e;
+}
+
+.nav-tabs .nav-link.active{
+    color: #183029;
+}
+
+.preco,.preco a{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-top: 10px;
+    color: #61746e;
+}
+
+.preco a{
+    text-decoration: none;
+    color: #61746e;
+}
+
+.preco a:hover{
+    text-decoration: underline;
+}
+
+footer,footer p{
+    text-align: center;
+    background-color: #1c3d30;
+    margin: 0px;
+    padding: 10px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}    
+
+footer a{
+    text-decoration: none;
+    color: wheat;  
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.redes-sociais ul,.redes-sociais a{
+    list-style: none;
+    font-size: 30px;
+    color: #1c3d30;
+    padding: 0px 5px;
+}
+
+.error{
+    color: red;
 }

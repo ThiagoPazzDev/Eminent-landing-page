@@ -8,47 +8,50 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 
 <body>
     <header id="cabecalho" class="navbar navbar-expand-lg sticky-top pt-4 pb-4 navbar-light">
         <div class="container">
             <a href="index.html" class="text-decoration-none ">
-                <h1 class="nome-loja m-0">Eminent</h1>
+                <h1 class="nome-loja m-0 pe-md-4">Eminent</h1>
             </a>
-            <button class="navbar-toggler mt-4" data-bs-toggle="collapse" data-bs-target="#menu-nav">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-nav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <nav class="navbar-collapse justify-content-around collapse navbar-expand-lg " id="menu-nav">
-                <ul class="nav nav-pills fw-bold d-block d-lg-flex text-center ">
+                <ul class="nav nav-pills  d-block d-lg-flex text-center">
                     <li class="nav-item ">
                         <a href="#sobre" class="nav-link">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link active">Adulto</a>
+                        <a href="#adulto" class="nav-link">Adulto</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Junior</a>
+                        <a href="#junior" class="nav-link">Junior</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Calçados</a>
+                        <a href="#calcados" class="nav-link">Calçados</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Acessórios</a>
+                        <a href="#acessorios" class="nav-link">Acessórios</a>
                     </li>
-                    <form action="" class="ms-2">
-                        <input type="search" id="pesquisa" placeholder="Busque Aqui">
-                        <label for="pesquisa"><i class="bi bi-search"></i></label>
-                    </form>
-                    <li>
-                        <a href="#"><i class="bi bi-geo-alt"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="bi bi-person"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="bi bi-handbag"></a></i>
-                    </li>
+                    <div class="itens-nav">
+                        <form action="" class="ms-2">
+                            <input type="search" id="pesquisa" placeholder="Busque Aqui">
+                            <label for="pesquisa"><i class="bi bi-search"></i></label>
+                        </form>
+                        <li>
+                            <a href="#"><i class="bi bi-geo-alt"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-person"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-handbag"></a></i>
+                        </li>
+                    </div>
                 </ul>
             </nav>
         </div>
@@ -57,13 +60,13 @@
         <div class="carousel slide" data-bs-ride="carousel" id="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="2000">
-                    <a href="#"><img src="imagens/img1.jpg" alt="Pessoa posando com mar ao fundo"></a>
+                    <img src="imagens/img1.jpg" alt="Pessoa posando com mar ao fundo">
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <a href="#"><img src="imagens/img2.jpg" alt="Homem De Terno Posando"></a>
+                    <img src="imagens/img2.jpg" alt="Homem De Terno Posando">
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <a href="#"><img src="imagens/img3.jpg" alt="Homem De Terno Posando"></a>
+                    <img src="imagens/img3.jpg" alt="Homem De Terno Posando">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -80,72 +83,497 @@
         </div>
 
     </section>
-    <section id="sobre" class="my-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 m-auto"><img src="imagens/sobre.jpg" class="w-100" alt="Homem Sentado No Barco">
-                </div>
-                <div class="col-md-6">
-                    <div id="txt-sobre">
-                        <div id="logo-sobre" class="w-100">
-                            <h2 class="nome-loja m-md-auto">Eminent</h2>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="sobre" class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 m-auto"><img src="imagens/sobre.jpg" class="w-100" alt="Homem Sentado No Barco">
+                    </div>
+                    <div class="col-md-6">
+                        <div id="txt-sobre">
+                            <div id="logo-sobre" class="w-100">
+                                <h2 class="nome-loja m-md-auto">Eminent</h2>
+                            </div>
+                            <p class="mt-5 mb-5 text-center">A <strong>Eminent</strong> nasceu em 1988, marcando sua estreia no luxuoso Shopping Iguatemi, em São Paulo. Desde então, tornou-se uma das principais referências em moda masculina de alta qualidade no Brasil, oferecendo uma extensa variedade de roupas, calçados e acessórios para homens que valorizam o estilo refinado e a sofisticação.</p>
+                            <div><button type="button">Conheça Mais</button></div>
                         </div>
-                        <p class="mt-5 mb-5 text-center">A <strong>Eminent</strong> nasceu em 1988, com sua primeira
-                            loja no Shopping Iguatemi, em São Paulo. Sendo atualmente uma das principais grifes de moda
-                            masculina do país com roupas, calçados e acessórios. Voltada ao homem bem-sucedido e
-                            sofisticado, oferece a seus clientes roupas clássicas, casuais e sociais confeccionadas com
-                            materiais premium, de marcas renomadas como Ermenegildo Zegna, Dormeuil, Thomas Mason, entre
-                            outros. Oferece também a confecção de trajes sob medida em determinadas unidades.</p>
-                        <div><button type="button"><a href="#">Conheça Mais</a></button></div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="adulto">
+        </section>
+        <section id="adulto">
+            <div class="container">
+                <h3 class="text-center fs-2 text-uppercase">Adulto</h3>
+                <ul class="nav nav-tabs text-center justify-content-center text-uppercase">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#poloAdulto">Polo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " data-bs-toggle="tab" data-bs-target="#camisetaAdulto">Camiseta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#calcasAdulto">Calça</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="poloAdulto" class="tab-pane fade show active">
+                        <div class="row">
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/polo.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Polo</a>
+                                    <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/polo.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Polo</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/polo.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Polo</a>
+                                    <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="camisetaAdulto" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item ">
+                                    <a href="#"><img src="imagens/camiseta.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Camiseta</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/camiseta.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Camiseta</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/camiseta.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Camiseta</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="calcasAdulto" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/calcas.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Calça</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/calcas.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Calça</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/calcas.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Calça</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="junior">
+            <div class="container">
+                <h3 class="text-center fs-2 text-uppercase mt-4 ">Júnior</h3>
+                <ul class="nav nav-tabs text-center justify-content-center text-uppercase">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#poloJunior">Polo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " data-bs-toggle="tab" data-bs-target="#camisetaJunior">Camiseta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#calcasJunior">Calça</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="poloJunior" class="tab-pane fade show active ">
+                        <div class="row">
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/polo.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Polo</a>
+                                    <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/polo.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Polo</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/polo.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Polo</a>
+                                    <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="camisetaJunior" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item ">
+                                    <a href="#"><img src="imagens/camiseta.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Camiseta</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/camiseta.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Camiseta</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/camiseta.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Camiseta</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="calcasJunior" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/calcas.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Calça</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/calcas.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Calça</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/calcas.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Calça</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="calcados">
+            <div class="container">
+                <h3 class="text-center fs-2 text-uppercase mt-4 ">Calçados</h3>
+                <ul class="nav nav-tabs text-center justify-content-center text-uppercase">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#sapatoSocial">Social</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " data-bs-toggle="tab" data-bs-target="#mocassim">Mocassim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tenis">Tênis</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="sapatoSocial" class="tab-pane fade show active ">
+                        <div class="row">
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/sapatosocial.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Sapato Social</a>
+                                    <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/sapatosocial.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Sapato Social</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/sapatosocial.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Sapato Social</a>
+                                    <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="mocassim" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item ">
+                                    <a href="#"><img src="imagens/mocassim.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Mocassim</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/mocassim.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Mocassim</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/mocassim.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Mocassim</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="tenis" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/tenis.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Tênis</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/tenis.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Tênis</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/tenis.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Tênis</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="acessorios">
+            <div class="container ">
+                <h3 class="text-center fs-2 text-uppercase mt-4 ">Acessórios</h3>
+                <ul class="nav nav-tabs text-center justify-content-center text-uppercase">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#relogio">Relógio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " data-bs-toggle="tab" data-bs-target="#carteira">Carteira</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#perfume">Perfume</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="relogio" class="tab-pane fade show active ">
+                        <div class="row">
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/relogio.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Relógio</a>
+                                    <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/relogio.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Relógio</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/relogio.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Relógio</a>
+                                    <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="carteira" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item ">
+                                    <a href="#"><img src="imagens/carteira.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Carteira</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/carteira.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Carteira</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/carteira.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Carteira</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="perfume" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/perfume.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Perfume</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/perfume.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Perfume</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center p-1">
+                                <div class="container-item">
+                                    <a href="#"><img src="imagens/perfume.jpg" alt="Homem Vestindo Polo" class="w-100"></a>
+                                    <div class="preco"><a href="#">Perfume</a>
+                                        <p>R$299,90</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+    <section id="contato" class="mt-5">
         <div class="container">
-            <h3 class="text-center fs-2 text-uppercase">Adulto</h3>
+            <h3 class="mb-5 text-uppercase">Contato</h3>
             <div class="row">
-                <div class="col-4 p-0">
-                    <div class="container-item"><a href=""><img src="imagens/polo.jpg" alt="Homem Vestindo Polo"
-                                class="w-100">
-                            <h4 class="item-nome">Polo</h4>
-                        </a></div>
+                <div class="col-md-6">
+                    <h3>Precisa de mais informações? </h3>
+                    <p class="lh-lg">Entre em contato conosco preenchendo o formulário e nossa equipe da loja mais próxima entrará em contato em breve para ajudá-lo. Nosso ponto de serviço está pronto para auxiliá-lo com dúvidas sobre produtos, disponibilidade, tamanhos, estilos, preços e muito mais.</p>
+                    <ul>
+                        <li><i class="bi bi-telephone"></i> (11) 2345-6789</li>
+                        <li><i class="bi bi-envelope"></i> eminent@contato.com</li>
+                        <li><i class="bi bi-geo-alt"></i> São Paulo - SP</li>
+                    </ul>
                 </div>
-                <div class="col-4 p-0">
-                    <div class="container-item"><a href=""><img src="imagens/camiseta.jpg" alt="Camiseta" class="w-100">
-                            <h4 class="item-nome">Camiseta</h4>
-                        </a></div>
-                </div>
-                <div class="col-4 p-0">
-                    <div class="container-item">
-                        <a href="">
-                            <img src="imagens/calcas.jpg" alt="Calças" class="w-100">
-                            <h4 class="item-nome">Calça</h4>
-                        </a>
-                    </div>
+                <div class="col-md-6">                  
+                    <form class="mb-3" id="form-msg">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome:</label>
+                            <input type="text" class="form-control" id="nome" name="nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email">                         
+                        </div>                      
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Sua Mensagem" id="mensagem" name="mensagem"></textarea>
+                            <label for="mensagem">Sua Mensagem:</label>
+                            <div id="mensagem-error" class="error"></div>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
-    <section id="junior"></section>
-    <section id="calcados"></section>
-    <section id="acessorios"></section>
+    <footer>Criado Por <a href="https://github.com/ThiagoPazzDev" target="_blank">Thiago Paz</a></footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/localization/messages_pt_BR.js"></script>
     <script>
-            document.addEventListener('DOMContentLoaded', function () {
-            const containerItens = document.querySelectorAll('.container-item');
-
-            containerItens.forEach(function (containerItem) {
-            containerItem.addEventListener('mouseenter', function () {
-            containerItem.classList.add('hovered');
+        $(document).ready(function () {
+        const itensContainer = document.querySelectorAll('.container-item');
+    
+        itensContainer.forEach(function (itemContainer) {
+            itemContainer.addEventListener('mouseenter', function () {
+                itemContainer.classList.add('hovered');
             });
-
-            containerItem.addEventListener('mouseleave', function () {
-            containerItem.classList.remove('hovered');
+    
+            itemContainer.addEventListener('mouseleave', function () {
+                itemContainer.classList.remove('hovered');
             });
         });
-    });
+
+        $("#form-msg").validate({
+        errorPlacement: function(error, element) {
+            if (element.attr("name") == "mensagem") {
+                error.appendTo("#mensagem-error");
+            } else {
+                error.insertAfter(element);
+            }
+        },
+        rules: {
+            nome: {
+                required: true
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            mensagem: {
+                required: true
+            }
+        },
+        messages: {
+            nome: {
+                required: "Por favor, digite seu nome."
+            },
+            email: {
+                required: "Por favor, digite seu email.",
+                email: "Por favor, digite um email válido."
+            },
+            mensagem: {
+                required: "Por favor, digite sua mensagem."
+            }
+        }
+    })
+});
     </script>
 </body>
 

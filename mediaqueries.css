@@ -9,10 +9,6 @@
         justify-content: center;
     }
 
-    .carousel-item img{
-        height: 300px;
-    }
-
 }
 
 @media screen and (min-width: 767px) {
@@ -21,20 +17,8 @@
         justify-content: center;
     }
 
-    .carousel-item img{
-        height: 380px;
-    }
 }
 
-@media screen and (min-width: 992px){
-    .carousel-item img{
-        height: 100%;
-    }
-
-    .container-item img{
-        height: 500px;
-    }
-}
 
 @media screen and (max-width: 992px){
     .item-nome {
@@ -48,5 +32,12 @@
     a.nav-link{
         margin: auto;
         width: 200px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .carousel {
+        max-width: 1920px;
+        margin: auto;
     }
 }
